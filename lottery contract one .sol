@@ -14,7 +14,6 @@ contract lottery {
     address public owner; // Address of the owner of the contract
     address payable[] public players; // Array to store addresses of players
     uint public lotteryId; // Current lottery ID
-    uint public entryFee;
     bool public lotteryOpen;
 
     mapping(uint => address payable) lotteryHistory; // Mapping to store lottery history by ID
